@@ -90,6 +90,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Handler\Handler\WasmDataHTTPHandler.cs" />
+    <Compile Include="Handler\Handler\WasmLicenseHTTPHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -104,7 +106,9 @@
     <Content Include="libs\js\wasm_engine_10.3.122217.wasm" />
     <Content Include="libs\js\web-capture.js.map" />
     <Content Include="libs\js\MWC.ABBYY.License" />
+    <Content Include="css\SourceSansPro-Semibold.woff2" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\AbbySampleDemo - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
