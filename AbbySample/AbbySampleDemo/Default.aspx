@@ -132,7 +132,7 @@
 </head>
 <body>
 <div class="demo_app-container" style="height: 100%;">
-    <img src="images/logo-mwc.svg" width="226" height="24" style="margin-bottom: 16px; margin-top: 32px;"/>
+    <img src="images/logo-mwc.svg" width="226" height="64" style="margin-bottom: 16px; margin-top: 32px;"/>
     <div id="content-container-content" class="content-container">
         <div style="font-size: 32px; line-height: 1.19; width: 320px; text-align: center; margin-bottom: 16px;">
             Use your browser to scan documents

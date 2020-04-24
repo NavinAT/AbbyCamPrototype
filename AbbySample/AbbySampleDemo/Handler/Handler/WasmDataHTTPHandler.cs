@@ -28,13 +28,16 @@ namespace DocumentWebCapture
 
             try
             {
-                resp.ContentType = "text/plain";
+                resp.AddHeader("Accept-Ranges", "bytes");
+                byte[] bytes = File.ReadAllBytes(Path.Combine(context.Request.MapPath("~"), "libs\\js\\wasm_engine_10.3.122217.data"));
+                resp.BinaryWrite(bytes);
+                //resp.ContentType = "text/plain";
 
-                using(StreamReader sr = new StreamReader(Path.Combine(context.Request.MapPath("~"), "libs\\js\\wasm_engine_10.3.122217.data")))
-                {
-                    string strContent = sr.ReadToEnd();
-                    resp.Write(strContent);
-                }
+                //using(StreamReader sr = new StreamReader(Path.Combine(context.Request.MapPath("~"), "libs\\js\\wasm_engine_10.3.122217.data")))
+                //{
+                //    string strContent = sr.ReadToEnd();
+                //    resp.Write(strContent);
+                //}
             }
             catch(Exception e)
             {
